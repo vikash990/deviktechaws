@@ -21,7 +21,7 @@ mongoose.connect(
 ).then(()=>console.log('MongoDb Connected')).catch(err=>console.log(err))
 
 if (process.env.NODE_ENV==='production'){
-    app.user(express.static('client/build'));
+    app.use(express.static('client/build'));
 }
 
 var routes = require('./routes/routes')
