@@ -68,14 +68,12 @@ class Apply extends React.Component {
  
   
     handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.user_name);
       event.preventDefault();
       const user={
           user_name:this.state.user_name,
           email:this.state.email,
           mobile:this.state.mobile
       }
-      alert(user.email);
       axios.post(`http://localhost:5000/routes/apply`,{ user_name:this.state.user_name,
       email:this.state.email,
       mobile:this.state.mobile}).then(response=>{

@@ -3,11 +3,13 @@ import styled from 'styled-components';
 const DesktopWrapper = styled.div`
   @media (max-width: 767px) {
     display: none;
+   
   }
 `;
 
 const MobileWrapper = styled.div`
   @media (min-width: 768px) {
+    
     display: none;
   }
 `;

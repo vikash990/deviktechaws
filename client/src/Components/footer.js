@@ -20,7 +20,7 @@ const RowWrapper = styled(Row)`
      display:flex;
      padding:50px 30px 30px 130px;
      background: rgba(0, 0, 0, 0.9);
-     width:100%;
+     width:104%;
      @media(max-width:768px) {
         padding:20px 20px 20px 30px;
     }
@@ -39,7 +39,7 @@ const FollowWrapper = styled('div')`
          padding-top:10px;
          opacity: 0.9;
          color:white;
-         width:96%;
+         width:100%;
          
 `;
 const SocialLinkWrapper= styled('div')`
