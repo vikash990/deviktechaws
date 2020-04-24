@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
 import { Card, Button } from "reactstrap";
+import { useHistory } from "react-router"
 
 const CardWrapper = styled(Card)`
     display: flex;
@@ -68,9 +69,9 @@ const CourseCard = ({ name, description, lectures, image, fee }) => (
        {/*  <Fee>
             {`₹ ${fee}`}
         </Fee> */}
-        <ButtonWrapper size='lg' color='info' onClick={() => {onRegisterClick()}}>
+       {/*  <ButtonWrapper size='lg' color='info' onClick={() => {onRegisterClick()}}>
             Register Now
-        </ButtonWrapper>
+        </ButtonWrapper> */}
     </CardWrapper>
 );
 

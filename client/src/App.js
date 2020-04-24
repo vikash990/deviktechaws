@@ -19,6 +19,7 @@ import BackDrop from './Components/BackDrop/backDrop.js';
 import Footer from './Components/footer.js';
 import KnowMoreJunior from './Components/knowMoreJunior.js';
 import KnowMoreSenior from './Components/knowMoreSenior.js';
+import Thanks from './Components/thanks.js';
 
 const MainWrapper =styled('div')`
   height:100%;
@@ -66,6 +67,11 @@ const routeItems = [
 {
     path: '/knowMoreSenior',
     component: KnowMoreSenior
+
+},
+{
+  path: '/thanks',
+  component: Thanks
 
 },
 ];

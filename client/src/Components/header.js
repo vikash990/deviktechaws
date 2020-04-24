@@ -11,7 +11,7 @@ const NavWrapper = styled('div')`
         flex-direction: row;
         height:60px;
         padding:12px 15px 12px 15px;
-        background: white;            
+        background: rgba(0, 0, 0, 0.9);         
 
     `;
 
@@ -29,8 +29,8 @@ const ApplyWrapper = styled('div')`
      text-align:center;
 
      @media(max-width:768px) {
-        margin:0px 15px;
-        width:200px;
+        margin:0px 0px;
+        width:150px;
     }
      
 `;
@@ -42,7 +42,7 @@ const NavLinkWrapper= styled(NavLink)`
       flex-direction: column;
       padding: 0 10px;
       justify-content: center;
-      color:black;
+      color:white;
       text-decoration:none;
       &:hover {
         
@@ -66,12 +66,16 @@ const SliderToggleWrapper=styled('div')`
    }
 `;
 
-const ApplyLinkWrapper=styled('a')`
+const ApplyNavLinkWrapper=styled(NavLink)`
      display: flex;
      flex-direction: column;
      color:white;
      text-decoration:none;
      margin-top:5px;
+     font-family:'Nunito Sans', sans-serif;
+  font-style:italic;
+  font-variant: normal;
+  font-weight:550;
 
   &:hover { 
     color:black;
@@ -109,12 +113,11 @@ class Header extends React.Component{
           {/*  <NavLinkWrapper to ="/courses" exact >Courses</NavLinkWrapper> */}
            <NavLinkWrapper to ="/about" exact >About Us</NavLinkWrapper>         
            <NavLinkWrapper to ="/contact" exact >Contact Us</NavLinkWrapper> 
-           <NavLinkWrapper to ="/apply" exact >Apply</NavLinkWrapper>
         </AllNavLinkWrapper>
             <Spacer/>        
-      {/*   <ApplyWrapper>   
-          <ApplyLinkWrapper target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfu0Iw5dSJNbymQetE7trMsoil-WWqUfylVgyg7GC0TYjdECw/viewform?vc=0&c=0&w=1">Apply</ApplyLinkWrapper> 
-        </ApplyWrapper> */}
+    
+       <ApplyNavLinkWrapper to ="/apply" exact >Apply</ApplyNavLinkWrapper> 
+     
         </NavWrapper>
         );
 

@@ -35,7 +35,4 @@ users.post('/apply', (req, res) => {
     })
 })
 
-
-
-
 module.exports = users

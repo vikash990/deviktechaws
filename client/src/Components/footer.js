@@ -13,12 +13,14 @@ const FooterWrapper = styled('div')`
      flex-direction:column;
      justify-content:space-around;
      font-family: 'Nunito Sans', sans-serif;
+     
 `;
 
 const RowWrapper = styled(Row)`
      display:flex;
      padding:50px 30px 30px 130px;
      background: rgba(0, 0, 0, 0.9);
+     width:100%;
      @media(max-width:768px) {
         padding:20px 20px 20px 30px;
     }
@@ -37,12 +39,14 @@ const FollowWrapper = styled('div')`
          padding-top:10px;
          opacity: 0.9;
          color:white;
+         width:96%;
          
 `;
 const SocialLinkWrapper= styled('div')`
         display:flex;
         flex-direction:row;
-        width:250px;
+        margin-right:20px;
+      
    
 
 
@@ -55,7 +59,7 @@ const AnchorWrapper = styled('a')`
 
 const FollowText = styled('div')`
     display: flex;
-    fle-direction: column;
+    flex-direction: column;
     align-items: center;
     font-size: 22px;    
 `;
