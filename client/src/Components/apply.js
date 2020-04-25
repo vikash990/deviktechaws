@@ -74,13 +74,13 @@ class Apply extends React.Component {
           email:this.state.email,
           mobile:this.state.mobile
       }
-      axios.post(`http://localhost:5000/routes/apply`,{ user_name:this.state.user_name,
+      axios.post(`/routes/apply`,{ user_name:this.state.user_name,
       email:this.state.email,
       mobile:this.state.mobile}).then(response=>{
         if(response){
           this.props.history.push("/thanks");
         }
-      })
+      }).catch(err=> {alert(err)})
     }
   
     render() {
